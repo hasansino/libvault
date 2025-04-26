@@ -19,6 +19,8 @@ var (
 )
 
 func TestVault(t *testing.T) {
+	t.Skip() // requires setup, will not work in CI/CD
+
 	const (
 		vaultAddr = "http://localhost:8200"
 		token     = "qwerty"
