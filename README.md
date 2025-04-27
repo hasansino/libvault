@@ -3,6 +3,7 @@
 Retrieve secrets from vault in runtime.
 
 Features:
+
 * Logging with `slog` compatible logger
 * Token, role, and k8 service account auth methods
 
@@ -31,7 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	err = vaultClient.TokenAuth("token")
 	if err != nil {
 		log.Fatal(err)
