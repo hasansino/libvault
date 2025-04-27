@@ -3,13 +3,13 @@
 Retrieve secrets from vault in runtime.
 
 Features:
-* Logging with slog compatible logger
+* Logging with `slog` compatible logger
 * Token, role, and k8 service account auth methods
 
 ## Installation
 
 ```bash
-~ $ go get -u github.com/hasansino/libvault
+~ $ go get github.com/hasansino/libvault
 ```
 
 ## Example
