@@ -1,10 +1,20 @@
 # libvault
 
-Hashicorp vault api wrapper.
+Retrieve secrets from vault in runtime.
 
-# Usage
+Features:
+* Logging with slog compatible logger
+* Token, role, and k8 service account auth methods
 
-## Token authentication (for local development)
+## Installation
+
+```bash
+~ $ go get -u github.com/hasansino/libvault
+```
+
+## Example
+
+### Token authentication (for local development)
 
 ```go
 package main
@@ -36,7 +46,7 @@ func main() {
 }
 ```
 
-## AppRole authentication
+### AppRole authentication
 
 ```go
 package main
@@ -70,7 +80,7 @@ func main() {
 }
 ```
 
-## Kubernetes authentication
+### Kubernetes authentication
 
 ```go
 package main
